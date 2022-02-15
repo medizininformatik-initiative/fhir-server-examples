@@ -6,7 +6,7 @@ Initial start takes long. No named volume / "down" will erase content!
 
 ## Start (manually)##
 
-`docker-compose -up -d`
+`docker-compose up -d`
 
 `docker-compose logs -f`
 
