@@ -1,6 +1,6 @@
 # fhir-server-examples #
 
-Zusammenstellung: Frank Meineke (15.2.2022)
+Zusammenstellung: Frank Meineke (15.2.2022) im Rahmen der MII Taskforce DDT
 
 Motivation ist:
   * lade und starte öffentliche zugängliche FHIR Server als docker Container
