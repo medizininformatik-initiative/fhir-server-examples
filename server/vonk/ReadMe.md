@@ -2,7 +2,7 @@
 
 ## Start (manually)##
 
-`docker-compose -up -d`
+`docker-compose up -d`
 
 `docker-compose logs -f`
 
