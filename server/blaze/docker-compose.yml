@@ -1,0 +1,15 @@
+version: '3.2'
+services:
+  blaze:
+    container_name: "blaze"
+    image: "samply/blaze:latest"
+    restart: unless-stopped
+    environment:
+      BASE_URL: "http://host-docker-internal:8080"
+      JAVA_TOOL_OPTIONS: "-Xmx2g"
+    ports:
+      - "8082:8080"
+    volumes:
+      - "blaze-data:/app/data"
+volumes:
+    blaze-data:

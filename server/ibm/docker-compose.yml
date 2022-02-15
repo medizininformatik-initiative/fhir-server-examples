@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  portainer:
+    image: ibmcom/ibm-fhir-server:latest
+    restart: unless-stopped
+    container_name: ibm
+    environment:
+      - BOOTSTRAP_DB=true
+    ports:
+      - 8084:9443

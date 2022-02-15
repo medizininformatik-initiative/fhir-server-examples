@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  vonk-web:
+    container_name: "vonk"
+    image: simplifier/vonk
+    restart: unless-stopped
+    ports:
+      - "8083:4080"
+    environment:
+      - VONK_Repository=SQLite
+      - VONK_Administration:Repository=SQLite
+      - VONK_License:LicenseFile=./license/firelyserver-license.json
+    volumes:
+      # where you put your firelyserver-license.json, eg. in home directory/vonk/license/firelyserver-license.json
+      - /home/${USER}/vonk/license:/app/license
+      # for local customization
+      - ./appsettings.json:/app/appsettings.json
