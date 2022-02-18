@@ -1,7 +1,7 @@
 # IBM #
 
 ## Remarks ##
-IBM ist configured to be use authorization for POST. Use https only.See "make count curl" to see how to handle that.
+IBM ist configured to use authorization for POST. ee "make count curl" to see how to handle that.
 Initial start takes long. No named volume / "down" will erase content!
 
 ## Start (manually)##
@@ -27,7 +27,7 @@ Initial start takes long. No named volume / "down" will erase content!
 
 ## FHIR base ##
 
-[https://localhost:8084/fhir-server/api/v4](https://localhost:8084/fhir-server/api/v4)
+[https://localhost:8084/fhir](https://localhost:8084/fhir)
 
 ## Tested environment ##
 
