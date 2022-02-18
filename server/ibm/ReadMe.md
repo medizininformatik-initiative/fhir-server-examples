@@ -11,7 +11,7 @@ Initial start takes long. No named volume / "down" will erase content!
 `docker-compose logs -f`
 
 ## Configuration ##
-?
+server.xml is changed (new endpoint, use http instead of https) and mounted as my-server.xml.
 
 ## Makefile (convenience) ##
 
