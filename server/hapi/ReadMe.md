@@ -1,6 +1,6 @@
 # Hapi #
 
-## Start (manually)##
+## Start (manually) ##
 
 `docker-compose -up -d`
 
