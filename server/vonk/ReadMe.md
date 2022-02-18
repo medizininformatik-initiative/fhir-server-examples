@@ -1,4 +1,4 @@
-# Vonk / firely) #
+# Vonk / firely #
 
 ## Makefile (convenience) ##
   * `make start` # start docker
