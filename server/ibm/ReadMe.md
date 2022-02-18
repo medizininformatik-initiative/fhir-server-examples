@@ -4,7 +4,7 @@
 IBM ist configured to use authorization for POST. See "make count curl" to how to handle that.
 Initial start takes long. No named volume / "down" will erase content!
 
-## Start (manually)##
+## Start (manually) ##
 
 `docker-compose up -d`
 
