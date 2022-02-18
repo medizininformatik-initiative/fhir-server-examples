@@ -17,14 +17,18 @@ Daten initial laden (hier: POLAR Testdaten). Es werden die zip Formate geladen u
 
 ## Start Fhir Server ##
 Goto specific server/XXX and type make start
-or (für die Mutigen) cd server and type make start-all 
+or (for the brave) cd xxx and type make start-all 
 See ReadMe.md for endpoint
 
 ## Upload Data ##
 ./control.sh upload-all
+or
+make upload-all
 
 ## Count Data ##
 ./control.sh count-all
+or
+make count-all
 
 ## Tested environment ##
   * Windows 10 (having 32GB)
