@@ -1,7 +1,7 @@
 # IBM #
 
 ## Remarks ##
-IBM ist configured to use authorization for POST. ee "make count curl" to see how to handle that.
+IBM ist configured to use authorization for POST. See "make count curl" to how to handle that.
 Initial start takes long. No named volume / "down" will erase content!
 
 ## Start (manually)##
