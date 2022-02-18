@@ -5,7 +5,10 @@ services:
     image: ibmcom/ibm-fhir-server:latest
     restart: unless-stopped
     container_name: ibm
+    volumes:
+      - ${PWD}/my-server.xml:/config/server.xml
     environment:
       - BOOTSTRAP_DB=true
     ports:
-      - 8084:9443
+      - 8084:8080
+

@@ -3,7 +3,7 @@
 HAPI=http://localhost:8081/fhir
 BLAZE=http://localhost:8082/fhir
 VONK=http://localhost:8083/fhir
-IBM=https://localhost:8084/fhir-server/api/v4
+IBM=http://localhost:8084/fhir
 
 base=$IBM
 base=$BLAZE

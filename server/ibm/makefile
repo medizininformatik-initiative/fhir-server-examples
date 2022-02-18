@@ -1,4 +1,4 @@
-base=https://localhost:8084/fhir-server/api/v4
+base=http://localhost:8084/fhir
 
 start:
 	docker-compose up -d
@@ -10,6 +10,6 @@ clean:
 	docker-compose down	
 
 bash:
-	docker exec -it hapi bash
+	docker exec -it ibm bash
 count:
 	curl  --insecure --location --user "fhiruser:change-password" -s ${base}/Patient?_summary=count

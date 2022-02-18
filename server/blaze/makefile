@@ -11,6 +11,6 @@ clean:
 	docker volume rm blaze_blaze-data
 
 bash:
-	docker exec -it hapi bash
+	docker exec -it blaze bash
 count:
 	curl -s ${base}/Patient?_summary=count

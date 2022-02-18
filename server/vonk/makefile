@@ -9,6 +9,7 @@ stop:
 clean:
 	docker-compose down	
 bash:
-	docker exec -it hapi bash
+# actally no bash but only sh
+	docker exec -it vonk sh
 count:
 	curl -s ${base}/Patient?_summary=count

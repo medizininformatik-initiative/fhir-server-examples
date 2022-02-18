@@ -3,12 +3,14 @@ services:
   hapi-fhir:
     container_name: "hapi"
     image: hapiproject/hapi:latest
+    extra_hosts:
+      - host.docker.internal:host-gateway
     restart: unless-stopped
     ports:
       - "8081:8080"
     volumes:
       - hapi-data:/data/hapi
-      - ./application.yaml:/data/hapi/application.yaml
+      - ${PWD}/my-application.yaml:/data/hapi/application.yaml
     environment:
       SPRING_CONFIG_LOCATION: 'file:///data/hapi/application.yaml'
 volumes:
