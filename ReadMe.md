@@ -15,7 +15,7 @@ Motivation ist:
 ### Supported Servers ###
 | Server      | Endpoint | Remark
 | ----------- | ----------- | ----------- 
-| [Hapi](servers/hapi)   | http://localhost:8081/fhir | 
+| [Hapi](server/hapi)   | http://localhost:8081/fhir | 
 | Blaze      | http://localhost:8082/fhir |
 | Vonk/Firely  | http://localhost:8083/fhir | License needed
 | IBM   | http://localhost:8084/fhir | Authorization needed
