@@ -5,7 +5,7 @@ services:
     image: "samply/blaze:latest"
     restart: unless-stopped
     environment:
-      BASE_URL: "http://host-docker-internal:8080"
+      BASE_URL: "http://localhost:8082"
       JAVA_TOOL_OPTIONS: "-Xmx2g"
     ports:
       - "8082:8080"
