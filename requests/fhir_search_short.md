@@ -15,7 +15,7 @@ The rest of this document covers FHIR search requests of increasing complexity.
 `GET [base]/Patient?_summary=count`                                               | Return count only
 `GET [base]/Patient?gender=female`                                                | Restrict results based on gender
 `GET [base]/Patient?birthdate=le1980-01-01`                                       | Use quantifiers
-`GET [base]/Observation?code=http://loinc.org/|15074-8`                           | Combine code and codesystem info in one parameter value
+`GET [base]/Observation?code=http://loinc.org/\|15074-8`                           | Combine code and codesystem info in one parameter value
 `GET [base]/Observation?code=http://loinc.org/%7C15074-8`                         | URL encode special characters
 `GET [base]/Patient?gender=female&birthdate=lt1980-01-01`                         | Combine several parameters (=AND)
 `GET [base]/Patient?gender=female,other`                                          | Combine several values (=OR)
@@ -23,7 +23,7 @@ The rest of this document covers FHIR search requests of increasing complexity.
 `GET [base]/Patient?gender=female&birthdate=lt1980-01-01&_summary=count`          | Extract count for feature combination
 `GET [base]/Observation?_include=Observation:subject`                             | Include resources linked by the base resource
 `GET [base]/Patient?_revinclude=Observation:subject`                              | Include resources the base resource is referenced by
-`GET [base]/Observation?code=http://loinc.org|15074-8&_include=Observation:subject`| Restrict the include search result based on the base resource
+`GET [base]/Observation?code=http://loinc.org\|15074-8&_include=Observation:subject`| Restrict the include search result based on the base resource
 `GET [base]/Patient?birthdate=lt1980-01-01&_revinclude=Observation:subject`       | Restrict the revinclude search result based on the base resource
 
 
