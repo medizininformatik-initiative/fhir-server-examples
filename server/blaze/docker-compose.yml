@@ -6,7 +6,7 @@ services:
     restart: unless-stopped
     environment:
       BASE_URL: "http://localhost:8082"
-      LOG_LEVEL: ${BLAZE_LOG_LEVEL:-error}
+      LOG_LEVEL: ${BLAZE_LOG_LEVEL:-info}
       JAVA_TOOL_OPTIONS: ${BLAZE_JVM_ARGS:--Xmx4g}
       DB_BLOCK_CACHE_SIZE: ${BLAZE_BLOCK_CACHE_SIZE:-256}
       DB_RESOURCE_CACHE_SIZE: ${BLAZE_DB_RESOURCE_CACHE_SIZE:-2000000}
