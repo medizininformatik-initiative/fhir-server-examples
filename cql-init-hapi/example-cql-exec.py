@@ -75,6 +75,7 @@ measure_template = '''{
 }'''
 
 fhir_base_url = "http://localhost:8081/fhir"
+
 cql_base64 = base64.b64encode(cql_input.encode('ascii'))
 
 lib_uuid = f'urn:uuid:{str(uuid.uuid4())}'
