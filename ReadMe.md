@@ -38,3 +38,11 @@ or (for the brave) type `make -C server start-all`
   * wsl2 (using 16GB, necessary if all servers are running)
   * DockerDesktop
   * ubuntu (packages: install "jq" as json pretty printer, curl, wget, make, unzip)
+
+## HAPI configure CQL
+
+To configure CQL for HAPI activate CQL in the HAPI application.yml or via .env var depending on your server setup.
+In this repository change the my-application.yml in the HAPI folder and set `cql_enabled: true`.
+Further HAPI will need extra helper CQL libraries to work. navigate to the `cql-init-hapi` folder of this repository and execute `hapi-init-cql.sh` to load the required libraries to your HAPI server.
+Once HAPI is started up you can then use the python script `example-cql-exec.py` to evaluate the number of female patients in your server.
+
